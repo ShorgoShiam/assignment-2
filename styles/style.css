@@ -222,7 +222,7 @@ header {
   margin-bottom: 30px;
   width: 27.5rem;
 }
-/* Calculator styles */
+/* Challenge part-1 styles */
 .calculator{
   width: full;
   background-color: rgb(34, 34, 34);
@@ -278,7 +278,7 @@ input[type="text"]::placeholder, select {
 .calculator-form{
   margin-bottom: 30px;
 }
-/* Team section responsive */
+/* Team section styles*/
 .team-items{
   text-align: center;
 }
@@ -304,6 +304,7 @@ input[type="text"]::placeholder, select {
 .img-name{
   font-size: 1rem;
 }
+/* Footer section styles */
 .footer{
   display: flex;
   gap: 100px;
@@ -337,9 +338,76 @@ input[type="text"]::placeholder, select {
   margin-top: -100px;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
-/* unique section means challenging part */
+/*challenging part-2 styles */
 
-
+.challenge-1{
+  margin-top: 100px;
+}
+.container {
+  display: flex;
+  max-width: 1300px;
+  margin: 50px auto;
+  background-color: #333333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.image1, .image2 {
+  flex: 1;
+  overflow: hidden;
+}
+.image2 img:hover{
+  transform:translate(80px);
+  transition: transform 2s;
+}
+.image1 img:hover{
+  transform:translate(80px);
+  transition: transform 2s;
+}
+.image1 img, .image2 img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.content-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.stat h2 {
+  font-size: 28px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.stat p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #aaa;
+}
 
 /* Responsive media query */
 
@@ -403,6 +471,7 @@ input[type="text"]::placeholder, select {
     padding: 60px;
     margin-left: -55px;
   }
+  /* Challenge part-1 responsive */
   .table-form{
     width: 90%;
     padding: 0 20px;
@@ -418,7 +487,26 @@ input[type="text"]::placeholder, select {
   }
   .img-container{
     grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
   }
+  /* Challenge-2 part responsive */
+
+  .container{
+    flex-direction: column;
+  }
+  .image1 img, .image2 img{
+    width: 100%;
+  }
+  .image2 img:hover{
+    transform:scale(.8);
+    transition: transform 2s;
+  }
+  .image1 img:hover{
+    transform:scale(.8);
+    transition: transform 2s;
+  }
+  /* Footer section responsive */
+
   .footer{
     flex-direction: column;
     padding: 50px;
