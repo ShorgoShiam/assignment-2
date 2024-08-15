@@ -13,7 +13,6 @@
 body {
   background-color: black;
   color: white; 
-  /* overflow: hidden; */
 }
 /* Shared styles */
 .shared-style{ 
@@ -311,6 +310,8 @@ input[type="text"]::placeholder, select {
   background: rgba(255, 255, 255, 0.1);
   margin-top: 100px;
   padding: 100px 190px;
+  padding-bottom: 200px;
+
 }
 .fitness{
   color: rgb(230, 83, 60);
@@ -321,21 +322,30 @@ input[type="text"]::placeholder, select {
   font-size: 2rem;
   font-weight: 700;
 }
-.hr{
-  width: 1060px;
+.get-started {
+  font-size: 1.3rem;
 }
 .last-line{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-align: center;
   margin-top: -50px;
 }
+.hr{
+  width: 1060px;
+  margin: 0 auto;
+  margin-top: -100px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+/* unique section means challenging part */
+
+
 
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
   /* Banner section responsive */
-  body{
+  .margin{
     margin-right: 30px;
     margin-left: 30px;
   }
@@ -363,10 +373,10 @@ input[type="text"]::placeholder, select {
     margin-left: 5px;
   }
   .card-1{
-    transform: translateY(-400px);
+    transform: translateX(70px) translateY(-450px);
   }
   .card-2 {
-    transform: translateX(300px) translateY(-100px);  
+    transform: translateX(350px) translateY(-100px);  
   }
  
   /* Habit section responsive */
@@ -413,9 +423,14 @@ input[type="text"]::placeholder, select {
     flex-direction: column;
     padding: 50px;
     gap: 20px;
+    padding-bottom: 100px;
   }
   .last-line{
-    font-size: 10px;
+    font-size: 20px;
+    
   }
- 
+  .hr{
+    width: 70%;
+    margin-top: -50px;
+  }
 }
